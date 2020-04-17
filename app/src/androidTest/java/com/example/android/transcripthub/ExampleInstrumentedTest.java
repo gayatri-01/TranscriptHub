@@ -1,4 +1,4 @@
-package com.example.android.voicetotextontouch;
+package com.example.android.transcripthub;
 
 import android.content.Context;
 import android.support.test.InstrumentationRegistry;

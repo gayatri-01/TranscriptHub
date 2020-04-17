@@ -1,3 +1,5 @@
 <resources>
-    <string name="app_name">VoiceToTextOnTouch</string>
+    <string name="app_name">TranscriptHub</string>
+    <string name="languageName">English</string>
+
 </resources>

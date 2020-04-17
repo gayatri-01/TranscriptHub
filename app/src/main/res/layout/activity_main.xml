@@ -46,37 +46,46 @@
     <!--</LinearLayout>-->
     <LinearLayout
         android:id="@+id/layout_chatbox1"
-        android:layout_width="332dp"
-        android:layout_height="91dp"
-        android:layout_marginBottom="16dp"
+        android:layout_width="373dp"
+        android:layout_height="104dp"
+        android:layout_marginBottom="8dp"
 
         android:minHeight="48dp"
         android:orientation="horizontal"
         app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintHorizontal_bias="0.503"
+        app:layout_constraintHorizontal_bias="1.0"
         app:layout_constraintLeft_toLeftOf="parent"
         app:layout_constraintRight_toRightOf="parent">
 
+
         <ImageButton
             android:id="@+id/button2"
-            android:layout_width="93dp"
+            android:layout_width="97dp"
             android:layout_height="86dp"
-            android:layout_alignParentBottom="true"
-            android:layout_alignParentLeft="true"
-            android:layout_alignParentStart="true"
             android:layout_marginBottom="29dp"
-            android:layout_marginLeft="24dp"
-            android:layout_marginStart="24dp"
-            android:background="@drawable/button_background2" />
+            android:layout_marginLeft="20dp"
+            android:layout_marginStart="20dp"
+            android:background="@drawable/button_background2"
+            android:contentDescription="TODO"
+            tools:layout_editor_absoluteX="0dp"
+            tools:layout_editor_absoluteY="444dp" />
+
+        <ImageButton
+            android:id="@+id/button3"
+            android:layout_width="97dp"
+            android:layout_height="86dp"
+            android:layout_marginLeft="20dp"
+            android:layout_marginStart="20dp"
+            android:background="@drawable/hang" />
 
 
         <ImageButton
             android:id="@+id/button"
-            android:layout_width="93dp"
+            android:layout_width="97dp"
             android:layout_height="86dp"
             android:layout_alignParentRight="true"
             android:layout_marginEnd="24dp"
-            android:layout_marginStart="100dp"
+            android:layout_marginStart="20dp"
             android:background="@drawable/button_background"
             tools:ignore="RtlCompat" />
 

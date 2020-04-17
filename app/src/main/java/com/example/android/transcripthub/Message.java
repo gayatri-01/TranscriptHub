@@ -1,4 +1,4 @@
-package com.example.android.voicetotextontouch;
+package com.example.android.transcripthub;
 public class Message{
     private String name;
     private  int type;
