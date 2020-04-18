@@ -1,82 +1,65 @@
 <?xml version="1.0" encoding="utf-8"?>
-<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:gravity="center_vertical"
+    android:gravity="center"
     android:orientation="vertical"
     android:padding="16dp"
-    tools:context=".LoginActivity">
-
+    tools:context=".LoginActivity"
+    >
 
     <ImageView
-        android:id="@+id/imageView"
-        android:layout_width="99dp"
-        android:layout_height="77dp"
+        android:layout_width="90dp"
+        android:layout_height="82dp"
         android:layout_alignParentTop="true"
-        android:layout_centerHorizontal="true"
-        android:layout_marginTop="42dp"
-        android:background="@drawable/phone"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintLeft_toLeftOf="parent"
-        app:layout_constraintRight_toRightOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.447" />
+        android:layout_marginTop="0dp"
+        android:layout_marginBottom="60dp"
+        android:background="@drawable/phone" />
 
     <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_alignParentTop="true"
-        android:layout_centerHorizontal="true"
-        android:layout_marginTop="148dp"
-        android:text="Account login"
-        android:textSize="20sp" />
-
+        android:text="Account Login"
+        android:textSize="20sp"
+        android:layout_marginBottom="50dp"
+        />
     <EditText
         android:id="@+id/email"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_alignParentTop="true"
-        android:layout_centerHorizontal="true"
-        android:layout_marginTop="196dp"
         android:hint="Email" />
 
     <EditText
         android:id="@+id/password"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_alignParentBottom="true"
-        android:layout_centerHorizontal="true"
-        android:layout_marginBottom="236dp"
         android:hint="Password"
-        android:inputType="textPassword" />
+        android:inputType="textPassword"
+        android:layout_marginTop="20dp"/>
 
     <Button
         android:id="@+id/login"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_alignParentBottom="true"
-        android:layout_alignParentStart="true"
-        android:layout_marginBottom="140dp"
         android:background="@color/colorButton"
-        android:text="Login" />
-
+        android:text="Login"
+        android:textColor="@color/white"
+        android:textSize="18sp"
+        android:layout_marginTop="40dp"/>
     <TextView
-        android:id="@+id/textView"
+        android:id="@+id/textViewReg"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_alignParentBottom="true"
-        android:layout_centerHorizontal="true"
-
-        android:layout_marginBottom="74dp"
         android:onClick="openReg"
-        android:text="Not Registered?" />
+        android:text="Not Registered?"
+        android:layout_marginTop="30dp"
+        android:textSize="15sp"/>
 
     <ProgressBar
         android:id="@+id/progressBar"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:visibility="gone" />
-
-</RelativeLayout>
+</LinearLayout>
