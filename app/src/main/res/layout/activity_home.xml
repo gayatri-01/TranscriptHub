@@ -53,7 +53,8 @@
         android:background="@color/colorButton"
         android:text="Show Call History"
         android:textColor="@color/white"
-        android:textStyle="bold" />
+        android:textStyle="bold"
+        android:onClick="showHistory"/>
 
 
 </RelativeLayout>

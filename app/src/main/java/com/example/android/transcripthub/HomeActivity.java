@@ -19,11 +19,22 @@ import java.util.ArrayList;
 import java.util.List;
 
 public class HomeActivity extends AppCompatActivity implements AdapterView.OnItemSelectedListener {
-
+static String number = "1234";
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_home);
+
+        Bundle bundle=getIntent().getExtras();
+        if (bundle != null) {
+            if (bundle.containsKey("number")) {
+                number = bundle.get("number").toString();
+                if (number != null) {
+                    Toast.makeText(getApplicationContext(), number, Toast.LENGTH_LONG).show();
+                }
+            }
+        }
+
 // Spinner element
         final Spinner spinner = (Spinner) findViewById(R.id.spinner);
         Button button=(Button)findViewById(R.id.button);
@@ -50,6 +61,7 @@ public class HomeActivity extends AppCompatActivity implements AdapterView.OnIte
             public void onClick(View v) {
                 Intent intent= new Intent(HomeActivity.this,MainActivity.class);
                 intent.putExtra("data",String.valueOf(spinner.getSelectedItem()));
+                intent.putExtra("number",number);
                 startActivity(intent);
             }
         });
@@ -61,7 +73,7 @@ public class HomeActivity extends AppCompatActivity implements AdapterView.OnIte
         String item = parent.getItemAtPosition(position).toString();
 
         // Showing selected spinner item
-        Toast.makeText(parent.getContext(), "Selected: " + item, Toast.LENGTH_SHORT).show();
+        //Toast.makeText(parent.getContext(), "Selected: " + item, Toast.LENGTH_SHORT).show();
 
     }
 
@@ -69,5 +81,17 @@ public class HomeActivity extends AppCompatActivity implements AdapterView.OnIte
         // TODO Auto-generated method stub
 
     }
+public void showHistory(View view){
+    Intent i=new Intent(HomeActivity.this,
+            HistoryActivity.class);
+    //Intent is used to switch from one activity to another.
 
+    startActivity(i);
+    //invoke the SecondActivity.
+
+    finish();
+    //the current activity will get finished.
+
+
+}
 }

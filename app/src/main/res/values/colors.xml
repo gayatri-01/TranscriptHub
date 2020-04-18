@@ -6,4 +6,13 @@
     <color name="colorButton">#3d5f51</color>
     <color name="colorButtonActive">#1bea95</color>
     <color name="white">#FFFFFF</color>
+    <color name="msg_no_notes">#999</color>
+    <color name="hint_enter_note">#89c3c3c3</color>
+    <color name="timestamp">#858585</color>
+    <color name="note_list_text">#232323</color>
+
+
+
+
+    
 </resources>

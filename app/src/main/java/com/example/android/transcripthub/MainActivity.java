@@ -18,16 +18,27 @@ import android.support.v7.widget.RecyclerView;
 import android.view.MotionEvent;
 import android.view.View;
 
+import java.text.SimpleDateFormat;
 import java.util.ArrayList;
+import java.util.*;
 import java.util.Locale;
 import android.os.Bundle;
 import android.widget.Toast;
+
+import com.google.firebase.auth.FirebaseAuth;
+import com.google.firebase.auth.FirebaseUser;
+import com.google.firebase.database.DatabaseReference;
+import com.google.firebase.database.FirebaseDatabase;
+
+
 
 public class MainActivity extends AppCompatActivity {
     static  int mic = 0;
     static RecyclerView messages;
     private RecyclerView.Adapter adapter;
     static ArrayList<Message> mess;
+    static String number = "1234";
+    private DatabaseReference mDatabase;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -48,7 +59,13 @@ public class MainActivity extends AppCompatActivity {
         //final EditText editText2 = findViewById(R.id.editText2);
         String languagePref = "en";
         Bundle bundle=getIntent().getExtras();
-        String data=bundle.get("data").toString();
+        String data = "";
+        if (bundle != null) {
+            data=bundle.get("data").toString();
+            if(bundle.containsKey("number"))
+                number = bundle.get("number").toString();
+        }
+
         //Toast.makeText(getApplicationContext(),data,Toast.LENGTH_LONG).show();
         if(data.equals("Hindi")){
             languagePref="hi";
@@ -218,6 +235,39 @@ public class MainActivity extends AppCompatActivity {
             }
         }
     }
+    public void storeChats(View view){
+        String email = "xyz@gmail.com";
+        FirebaseUser user = FirebaseAuth.getInstance().getCurrentUser();
+        if(user!=null)
+            email = user.getEmail();
+        Toast.makeText(getApplicationContext(),email,Toast.LENGTH_LONG).show();
+        mDatabase = FirebaseDatabase.getInstance().getReference(email.substring(0,email.indexOf('@')));
+
+
+        String chatId = mDatabase.push().getKey();
+        String c = "";
+        String t = "";
+        for (int i = 0; i < mess.size(); i++){
+            c+=mess.get(i).getName()+";";
+            t+=mess.get(i).getType()+";";
+        }
+        SimpleDateFormat simpleDateFormat = new SimpleDateFormat("dd-MM-yyyy-hh:mm:ss");
+        String format = simpleDateFormat.format(new Date());
+
+        Chat instance = new Chat(format, c, t,number);
+        mDatabase.child(chatId).setValue(instance);
+
+        Intent i=new Intent(MainActivity.this,
+                HomeActivity.class);
+        //Intent is used to switch from one activity to another.
+
+        startActivity(i);
+        //invoke the SecondActivity.
+
+        finish();
+        //the current activity will get finished.
+
+    }
 
     private ArrayList<Message> initMessages() {
         ArrayList<Message> list = new ArrayList<>();
@@ -228,3 +278,4 @@ public class MainActivity extends AppCompatActivity {
         return list;
     }
 }
+

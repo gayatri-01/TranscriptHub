@@ -15,7 +15,7 @@
         android:ellipsize="none"
         android:padding="10px"
         android:singleLine="false"
-        android:text="Hey it is me Gayatri and gokul"
+        android:text=""
         android:layout_marginBottom="5dp"
         android:textColor="@android:color/white"
         android:textSize="20sp" />

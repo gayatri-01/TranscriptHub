@@ -76,7 +76,9 @@
             android:layout_height="86dp"
             android:layout_marginLeft="20dp"
             android:layout_marginStart="20dp"
-            android:background="@drawable/hang" />
+            android:background="@drawable/hang"
+            android:onClick="storeChats"
+            />
 
 
         <ImageButton
