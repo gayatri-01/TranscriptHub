@@ -240,7 +240,7 @@ public class MainActivity extends AppCompatActivity {
         FirebaseUser user = FirebaseAuth.getInstance().getCurrentUser();
         if(user!=null)
             email = user.getEmail();
-        Toast.makeText(getApplicationContext(),email,Toast.LENGTH_LONG).show();
+        //Toast.makeText(getApplicationContext(),email,Toast.LENGTH_LONG).show();
         mDatabase = FirebaseDatabase.getInstance().getReference(email.substring(0,email.indexOf('@')));
 
 

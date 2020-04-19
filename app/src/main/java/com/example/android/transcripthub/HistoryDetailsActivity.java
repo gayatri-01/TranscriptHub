@@ -18,7 +18,7 @@ public class HistoryDetailsActivity extends AppCompatActivity {
 
         String[] chatArr = chat.split(";");
         String[] typeArr = type.split(";");
-        Toast. makeText(getApplicationContext(),type+" "+chat,Toast. LENGTH_SHORT).show();
+        //Toast. makeText(getApplicationContext(),type+" "+chat,Toast. LENGTH_SHORT).show();
 
         LinearLayout myLinearLayout = findViewById(R.id.myLinearLayout);
 
@@ -36,12 +36,13 @@ public class HistoryDetailsActivity extends AppCompatActivity {
 
             }
             rowTextView.setText(chatArr[i]);
-            rowTextView.setWidth(600);
+            rowTextView.setWidth(800);
 
             rowTextView.setTextSize(20);
             LinearLayout.LayoutParams params = new LinearLayout.LayoutParams(LinearLayout.LayoutParams.WRAP_CONTENT, LinearLayout.LayoutParams.WRAP_CONTENT);
             params.setMargins(30,30,30,0);
             rowTextView.setLayoutParams(params);
+            rowTextView.setPadding(5, 5, 5, 5);
 
             // add the textview to the linearlayout
             myLinearLayout.addView(rowTextView);

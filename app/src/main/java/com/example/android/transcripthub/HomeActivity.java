@@ -15,22 +15,26 @@ import android.widget.Button;
 import android.widget.Spinner;
 import android.widget.Toast;
 
+import com.google.firebase.auth.FirebaseAuth;
+
 import java.util.ArrayList;
 import java.util.List;
 
 public class HomeActivity extends AppCompatActivity implements AdapterView.OnItemSelectedListener {
-static String number = "1234";
+static String number = "+919967549192";
+    private FirebaseAuth mAuth;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_home);
+        mAuth = FirebaseAuth.getInstance();
 
         Bundle bundle=getIntent().getExtras();
         if (bundle != null) {
             if (bundle.containsKey("number")) {
                 number = bundle.get("number").toString();
                 if (number != null) {
-                    Toast.makeText(getApplicationContext(), number, Toast.LENGTH_LONG).show();
+                    //Toast.makeText(getApplicationContext(), number, Toast.LENGTH_LONG).show();
                 }
             }
         }
@@ -94,4 +98,15 @@ public void showHistory(View view){
 
 
 }
+public void logout(View view){
+    mAuth.signOut();
+    Intent intent = new Intent(HomeActivity.this, LoginActivity.class);
+    startActivity(intent);
+}
+    public void exit(View view){
+        Intent homeIntent = new Intent(Intent.ACTION_MAIN);
+        homeIntent.addCategory( Intent.CATEGORY_HOME );
+        homeIntent.setFlags(Intent.FLAG_ACTIVITY_CLEAR_TOP);
+        startActivity(homeIntent);
+    }
 }

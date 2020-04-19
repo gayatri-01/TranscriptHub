@@ -23,13 +23,24 @@
         app:layout_constraintVertical_bias="0.447" />
 
     <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+
+        android:layout_below="@+id/imageView"
+        android:layout_centerHorizontal="true"
+        android:text="TranscriptHub"
+        android:textColor="@color/colorButton"
+        android:textSize="30sp"
+        android:textStyle="bold"/>
+
+
+    <TextView
         android:id="@+id/textView"
         android:layout_width="241dp"
         android:layout_height="48dp"
         android:layout_alignParentBottom="true"
-        android:layout_alignParentEnd="true"
-        android:layout_marginBottom="161dp"
-        android:layout_marginEnd="52dp"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="112dp"
         android:text="We HEAR - You SEE"
         android:textColor="?attr/colorControlActivated"
         android:textSize="25sp"
