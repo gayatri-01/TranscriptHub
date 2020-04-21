@@ -91,9 +91,9 @@ Create Firebase Real-Time Database for user conversation history
 -----------------------------------------------
 ## Future Enhancements
 
-- [ ] `Conference Transcription Services`
-- [ ] `Video Call Transcription`
-- [ ] `Cross-platform`
+- [ ] Conference Transcription Services
+- [ ] Video Call Transcription
+- [ ] Cross-platform
 
 
 -----------------------------------------------
