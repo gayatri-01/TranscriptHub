@@ -4,7 +4,7 @@
  <img src="https://github.com/gayatri-01/TranscriptHub/blob/master/assets/phone.svg" width="200px"></img>
  
 # `TranscriptHub`
-## `We HEAR – You SEE`
+`We HEAR – You SEE`
 
 
 [![forthebadge made-with-python](http://ForTheBadge.com/images/badges/made-with-java.svg)](https://www.java.com/)
@@ -27,7 +27,7 @@ Real-Time Voice Call Transcription  Android Application which will:
 -----------------------------------------------
 ## How it Works
 <div align="center">
-<img src="https://github.com/gayatri-01/TranscriptHub/blob/master/assets/HowItWorks.PNG" width="200px"></img>
+<img src="https://github.com/gayatri-01/TranscriptHub/blob/master/assets/HowItWorks.PNG" width="800px"></img>
 </div>
 
 -----------------------------------------------
@@ -36,20 +36,24 @@ Real-Time Voice Call Transcription  Android Application which will:
 ## Demo
 
 ### Account Setup 
-
+<div align="center">
 ![Demo](https://github.com/gayatri-01/TranscriptHub/blob/master/assets/Login.gif)  
+</div>
 
 ### Auto Detection of Incoming Calls and its transcription 
-
+<div align="center">
 ![Demo](https://github.com/gayatri-01/TranscriptHub/blob/master/assets/Incoming.gif)  
+</div>
 
 ### Auto Detection of Outgoing Calls and its transcription  
-
+<div align="center">
 ![Demo](https://github.com/gayatri-01/TranscriptHub/blob/master/assets/Outgoing.gif)  
+</div>
 
 ### Hindi Transcription
-
+<div align="center">
 ![Demo](https://github.com/gayatri-01/TranscriptHub/blob/master/assets/HindiIncoming.gif)  
+</div>
 
 
 
