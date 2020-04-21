@@ -1,17 +1,17 @@
 
 <div align="center">
 
- <img src="./app/src/main/res/drawable/phone.png" width="200px"></img>
+ <img src="https://github.com/gayatri-01/TranscriptHub/blob/master/assets/phone.svg" width="200px"></img>
  
-# `TranscriptHub`
-## `We HEAR – You SEE`
+# `TranscriptHub : We HEAR – You SEE`
+
 
 
 [![forthebadge made-with-python](http://ForTheBadge.com/images/badges/made-with-java.svg)](https://www.java.com/)
 
 </div>
 
-Real-Time Voice Call Transcription  Android Application which will:
+## Real-Time Voice Call Transcription Android Application:
 
 - Convert the speech of the caller to text
 - Display converted text on the hearing-impaired person’s phone during the call
@@ -27,7 +27,7 @@ Real-Time Voice Call Transcription  Android Application which will:
 -----------------------------------------------
 ## How it Works
 <div align="center">
-<img src="./assets/HowItWorks.png" width="200px"></img>
+<img src="https://github.com/gayatri-01/TranscriptHub/blob/master/assets/HowItWorks.PNG" width="800px"></img>
 </div>
 
 -----------------------------------------------
@@ -36,20 +36,24 @@ Real-Time Voice Call Transcription  Android Application which will:
 ## Demo
 
 ### Account Setup 
-
-![Demo]()  
+<div align="center">
+ <img src="https://github.com/gayatri-01/TranscriptHub/blob/master/assets/Login.gif" height ="500px"></img>  
+</div>
 
 ### Auto Detection of Incoming Calls and its transcription 
-
-![Demo]()  
+<div align="center">
+ <img src="https://github.com/gayatri-01/TranscriptHub/blob/master/assets/Incoming.gif" height ="500px"></img>  
+</div>
 
 ### Auto Detection of Outgoing Calls and its transcription  
-
-![Demo]()  
+<div align="center">
+ <img src="https://github.com/gayatri-01/TranscriptHub/blob/master/assets/Outgoing.gif" height ="500px"></img>  
+</div>
 
 ### Hindi Transcription
-
-![Demo]()  
+<div align="center">
+ <img src="https://github.com/gayatri-01/TranscriptHub/blob/master/assets/HindiIncoming.gif" height ="500px"></img>  
+</div>
 
 
 
