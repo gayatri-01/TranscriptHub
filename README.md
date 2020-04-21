@@ -1,7 +1,7 @@
 
 <div align="center">
 
- <img src="./app/src/main/res/drawable/phone.png" width="200px"></img>
+ <img src="https://github.com/gayatri-01/TranscriptHub/blob/master/assets/phone.svg" width="200px"></img>
  
 # `TranscriptHub`
 ## `We HEAR – You SEE`
@@ -27,7 +27,7 @@ Real-Time Voice Call Transcription  Android Application which will:
 -----------------------------------------------
 ## How it Works
 <div align="center">
-<img src="./assets/HowItWorks.png" width="200px"></img>
+<img src="https://github.com/gayatri-01/TranscriptHub/blob/master/assets/HowItWorks.PNG" width="200px"></img>
 </div>
 
 -----------------------------------------------
@@ -37,19 +37,19 @@ Real-Time Voice Call Transcription  Android Application which will:
 
 ### Account Setup 
 
-![Demo]()  
+![Demo](https://github.com/gayatri-01/TranscriptHub/blob/master/assets/Login.gif)  
 
 ### Auto Detection of Incoming Calls and its transcription 
 
-![Demo]()  
+![Demo](https://github.com/gayatri-01/TranscriptHub/blob/master/assets/Incoming.gif)  
 
 ### Auto Detection of Outgoing Calls and its transcription  
 
-![Demo]()  
+![Demo](https://github.com/gayatri-01/TranscriptHub/blob/master/assets/Outgoing.gif)  
 
 ### Hindi Transcription
 
-![Demo]()  
+![Demo](https://github.com/gayatri-01/TranscriptHub/blob/master/assets/HindiIncoming.gif)  
 
 
 
